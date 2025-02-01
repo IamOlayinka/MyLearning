@@ -1,116 +1,155 @@
-    <!-- HTML Comments
+<!-- HTML Comments
      Name: Olayinka Idumu
      file name: places
      Date: 15th January, 2025
      Description: The page contains a form that request for user input to be submitted
 
-   --> 
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Brief form to get data about your home town">
-        <meta name="keywords" content="User Location Favorite">
-        <meta name="author" content="Olayinka">
+   -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Brief form to get data about your home town"
+    />
+    <meta name="keywords" content="User Location Favorite" />
+    <meta name="author" content="Olayinka" />
 
-        <title>Places</title>
-    </head>
-    <body>
+    <title>Places</title>
+  </head>
+  <body>
+    <fieldset>
+      <p>
+        This is Page 2, Click
+        <a href="http://127.0.0.1:5500/Lab1/hometown.html">here</a> to go to
+        Page 1
+      </p>
+      <h2>Share your information about my home town</h2>
+
+      <form action="Lab1Form.php" method="post">
         <fieldset>
-        <p>This is Page 2, Click <a href="http://127.0.0.1:5500/Lab1/hometown.html">here</a> to go to Page 1</p>
-        <h2>Share your information about my home town</h2>
-        
-        <form action="Lab1Form.php" method="post">
-            <fieldset>
-            <legend>1. User Info</legend>
-            <label for="fname">First name</label>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <label for="lname">Last name</label>
-            <br>
-            <input type="text" id="fname" name="fname" value="" placeholder="firstname">
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;
-            <input type="text" id="lname" name="lname" value="" placeholder="lastname">
-            <br>
-            <label for="email">Email</label><br>
-            <input type="email" id="email" name="email" value="" placeholder="format for email is xx@yy.zzz"><br><br>
-            </fieldset>
-            <fieldset>
-                <legend>2. Location</legend>
-                <label for="address">Address</label><br>
-                <input type="text" id=address name="address" value="">
-                <br>
-                <br>
-                <label for="city">City</label>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <label for="state">State</label>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <label for="zip">Zip</label>
-                <br>
-                <input type="text" id="city" name="city" value="">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <input type="text" id="state" name="state" value="">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <input type="text" id="zip" name="zip" value="">
-                <br>
-                <label for="phone">Phone</label>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <label for="country">Country</label><br>
-                <input type="text" id="phone" name="phone" value="" placeholder="NNN-NNN-NNNN">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <select>
-                    <option id="canada" value="canada" >Canada</option>
-                    <option id="nigeria" value="nigeria">Nigeria</option>
-                    <option id="iran" value="iran">Iran</option>
-                    <option id="indian" value="indian">Indian</option>
-                    <option id="vietnam" value="vietnam">Vietnam</option>
-                </select>
-                <br>
-                <br>
-                <label>Continent</label>
-                    <br>
-                    <input type="radio" name="continent" id="northAmerican" value="North America"> North America<br>
-                    <input type="radio" name="continent" id="europe" value="Europe"> Europe<br>
-                    <input type="radio" name="continent" id="southAmerica" value="South America"> South America
-                
-                </fieldset>
-                <fieldset>
-                    <legend>Favorite Place</legend>
-                    <label for="favplace">Favourite Place:</label>
-                    <input type="text" id="favplace" name="favplace" value="">
-                    <br>
-                    <br>
-                    <label>Why do you love this place?</label><br>
-                    <textarea rows="5">
-
-                    </textarea>
-                </fieldset>
-            <button type="submit">Submit</button>
-            <button type="reset">Clear information</button>
-            <br>
-            <p>Olayinka Idumu, 2025 Copyright</p>  
-        </form>
+          <legend>1. User Info</legend>
+          <label for="fname">First name</label>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <label for="lname">Last name</label>
+          <br />
+          <input
+            type="text"
+            id="fname"
+            name="fname"
+            value=""
+            placeholder="firstname"
+            readonly
+          />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;
+          <input
+            type="text"
+            id="lname"
+            name="lname"
+            value=""
+            placeholder="lastname"
+          />
+          <br />
+          <label for="email">Email</label><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            value=""
+            placeholder="format for email is xx@yy.zzz"
+          /><br /><br />
+        </fieldset>
+        <fieldset>
+          <legend>2. Location</legend>
+          <label for="address">Address</label><br />
+          <input type="text" id="address" name="address" value="" />
+          <br />
+          <br />
+          <label for="city">City</label>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <label for="state">State</label>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <label for="zip">Zip</label>
+          <br />
+          <input type="text" id="city" name="city" value="" />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="text" id="state" name="state" value="" />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="text" id="zip" name="zip" value="" />
+          <br />
+          <label for="phone">Phone</label>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <label for="country">Country</label><br />
+          <input
+            type="text"
+            id="phone"
+            name="phone"
+            value=""
+            placeholder="NNN-NNN-NNNN"
+          />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <select>
+            <option id="canada" value="canada">Canada</option>
+            <option id="nigeria" value="nigeria">Nigeria</option>
+            <option id="iran" value="iran">Iran</option>
+            <option id="indian" value="indian">Indian</option>
+            <option id="vietnam" value="vietnam">Vietnam</option>
+          </select>
+          <br />
+          <br />
+          <label>Continent</label>
+          <br />
+          <input
+            type="radio"
+            name="continent"
+            id="northAmerican"
+            value="North America"
+          />
+          North America<br />
+          <input type="radio" name="continent" id="europe" value="Europe" />
+          Europe<br />
+          <input
+            type="radio"
+            name="continent"
+            id="southAmerica"
+            value="South America"
+          />
+          South America
+        </fieldset>
+        <fieldset>
+          <legend>Favorite Place</legend>
+          <label for="favplace">Favourite Place:</label>
+          <input type="text" id="favplace" name="favplace" value="" />
+          <br />
+          <br />
+          <label>Why do you love this place?</label><br />
+          <textarea rows="5"> </textarea>
+        </fieldset>
+        <button type="submit">Submit</button>
+        <button type="reset">Clear information</button>
+        <br />
+        <p>Olayinka Idumu, 2025 Copyright</p>
+      </form>
     </fieldset>
 
     <footer>
-        <div>
-            &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
-           Olayinka Idumu
-           &nbsp;&nbsp;&nbsp;&nbsp;
-           15th January, 2025
-           &nbsp;&nbsp;&nbsp;&nbsp;
-           &copy; 2025 All right reserved 
-        </div> 
-       </footer> 
-    </body>
-    </html>
+      <div>
+        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Olayinka Idumu
+        &nbsp;&nbsp;&nbsp;&nbsp; 15th January, 2025 &nbsp;&nbsp;&nbsp;&nbsp;
+        &copy; 2025 All right reserved
+      </div>
+    </footer>
+  </body>
+</html>
 <
